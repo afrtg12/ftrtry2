@@ -30,6 +30,11 @@ jobs:
 
       # 4️⃣ Run the Trading Bot
       - name: Execute Trading Bot
+        env:
+            ALPACA_API_KEY_1: ${{ secrets.ALPACA_API_KEY_1 }}
+            ALPACA_SECRET_KEY_1: ${{ secrets.ALPACA_SECRET_KEY_1 }}
+            ALPACA_API_KEY_2: ${{ secrets.ALPACA_API_KEY_2 }}
+            ALPACA_SECRET_KEY_2: ${{ secrets.ALPACA_SECRET_KEY_2 }}
         run: |
           python trad1501.py
       - name: Debug Environment Variables
