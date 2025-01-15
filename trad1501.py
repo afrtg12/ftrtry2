@@ -12,6 +12,15 @@ API_KEY_BOLLINGER = os.getenv('ALPACA_API_KEY_2')
 SECRET_KEY_BOLLINGER = os.getenv('ALPACA_SECRET_KEY_2')
 BASE_URL = 'https://paper-api.alpaca.markets'
 
+
+#Debugging: Print the keys to verify they are loaded correctly (masking for safety)
+print(f"API_KEY_SCALPING: {'Loaded' if API_KEY_SCALPING else 'Not Loaded'}")
+print(f"SECRET_KEY_SCALPING: {'Loaded' if SECRET_KEY_SCALPING else 'Not Loaded'}")
+print(f"API_KEY_BOLLINGER: {'Loaded' if API_KEY_BOLLINGER else 'Not Loaded'}")
+print(f"SECRET_KEY_BOLLINGER: {'Loaded' if SECRET_KEY_BOLLINGER else 'Not Loaded'}")
+
+
+
 # Connect to Alpaca Paper Trading Accounts
 client_scalping = REST(API_KEY_SCALPING, SECRET_KEY_SCALPING, BASE_URL)
 client_bollinger = REST(API_KEY_BOLLINGER, SECRET_KEY_BOLLINGER, BASE_URL)
