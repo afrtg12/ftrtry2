@@ -1,4 +1,4 @@
-backtrader
 yfinance
 numpy
 pandas
+alpaca_trading_api
