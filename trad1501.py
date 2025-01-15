@@ -5,7 +5,6 @@ from alpaca_trade_api.rest import REST
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
-from google.colab import userdata
 # Load Alpaca API keys from environment variables (GitHub Secrets)
 API_KEY_SCALPING = os.getenv('ALPACA_API_KEY_1')
 SECRET_KEY_SCALPING = os.getenv('ALPACA_SECRET_KEY_1')
