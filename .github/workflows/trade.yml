@@ -10,12 +10,7 @@ jobs:
   run-trading-bot:
     runs-on: ubuntu-latest
 
-    env:
-      ALPACA_API_KEY_1: ${{ secrets.ALPACA_API_KEY_1 }}
-      ALPACA_SECRET_KEY_1: ${{ secrets.ALPACA_SECRET_KEY_1 }}
-      ALPACA_API_KEY_2: ${{ secrets.ALPACA_API_KEY_2 }}
-      ALPACA_SECRET_KEY_2: ${{ secrets.ALPACA_SECRET_KEY_2 }}
-
+    environment: trad   
     steps:
       # 1️⃣ Checkout the repository
       - name: Checkout Repository
