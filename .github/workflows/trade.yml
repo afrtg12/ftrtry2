@@ -37,6 +37,10 @@ jobs:
       - name: Execute Trading Bot
         run: |
           python trad1501.py
+      - name: Debug Environment Variables
+        run: |
+          echo "ALPACA_API_KEY_1=${{ secrets.ALPACA_API_KEY_1 }}"
+          echo "ALPACA_SECRET_KEY_1=${{ secrets.ALPACA_SECRET_KEY_1 }}"
 
       # 5️⃣ Upload Logs (Optional)
       - name: Upload Trade Logs
