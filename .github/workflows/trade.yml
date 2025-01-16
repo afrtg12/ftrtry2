@@ -42,9 +42,4 @@ jobs:
           echo "ALPACA_API_KEY_1=${{ secrets.ALPACA_API_KEY_1 }}"
           echo "ALPACA_SECRET_KEY_1=${{ secrets.ALPACA_SECRET_KEY_1 }}"
 
-      # 5️⃣ Upload Logs (Optional)
-      - name: Upload Trade Logs
-        uses: actions/upload-artifact@v3
-        with:
-          name: trade-logs
-          path: trade_log.txt
+
